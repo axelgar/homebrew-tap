@@ -5,20 +5,20 @@
 class Opentree < Formula
   desc "Git worktree manager CLI"
   homepage "https://github.com/axelgar/opentree"
-  version "0.1.7"
+  version "0.1.8"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/axelgar/opentree/releases/download/v0.1.7/opentree_0.1.7_darwin_amd64.tar.gz"
-      sha256 "08cf6a544e59e9ab296dfabbc0a2cd2ea301230be1cbe14c187d4fbae8ead803"
+      url "https://github.com/axelgar/opentree/releases/download/v0.1.8/opentree_0.1.8_darwin_amd64.tar.gz"
+      sha256 "96a35c2a043f637a5b98fe25cc82526ccc683d61f942ea533ca18513537385c2"
 
       define_method(:install) do
         bin.install "opentree"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/axelgar/opentree/releases/download/v0.1.7/opentree_0.1.7_darwin_arm64.tar.gz"
-      sha256 "65340eecfc5d19e28c0054fd82e6753b9239b98bf10327158aa4da02f84ecf42"
+      url "https://github.com/axelgar/opentree/releases/download/v0.1.8/opentree_0.1.8_darwin_arm64.tar.gz"
+      sha256 "aca32b641b1af54f6cf1028d0ef4531adb20a67453fc9b800cc1d3b3ecf72539"
 
       define_method(:install) do
         bin.install "opentree"
@@ -28,15 +28,15 @@ class Opentree < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/axelgar/opentree/releases/download/v0.1.7/opentree_0.1.7_linux_amd64.tar.gz"
-      sha256 "62680ef74409d6b7f9bb7aba38363b59ef1f140b298f3b5cb365df611a3fd79f"
+      url "https://github.com/axelgar/opentree/releases/download/v0.1.8/opentree_0.1.8_linux_amd64.tar.gz"
+      sha256 "997803e2eae41adc5a2e7ac58b59df0793958521233a3a0ace448c93bf06bab6"
       define_method(:install) do
         bin.install "opentree"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/axelgar/opentree/releases/download/v0.1.7/opentree_0.1.7_linux_arm64.tar.gz"
-      sha256 "09f897457950a81eda5cd772e374171c2d8b1bb95dfca73dd752e667405c7de4"
+      url "https://github.com/axelgar/opentree/releases/download/v0.1.8/opentree_0.1.8_linux_arm64.tar.gz"
+      sha256 "4d0661788c2ab983adf726cb7387afa3c8d06d7d4938f522c6c7edd533a0f6a3"
       define_method(:install) do
         bin.install "opentree"
       end
