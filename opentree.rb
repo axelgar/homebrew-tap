@@ -10,7 +10,7 @@ class Opentree < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/axelgar/opentree/releases/download/v0.1.18/opentree_0.1.18_darwin_amd64.tar.gz"
-      sha256 "e7cad2c171851a65530112c9f87c1f940b79f97fd56781437d38be4fafcf6601"
+      sha256 "74775f2c90f288d05462c92f8ebe2b782b41b42e66d96ad4c3eccd2ed7c22668"
 
       define_method(:install) do
         bin.install "opentree"
@@ -18,7 +18,7 @@ class Opentree < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/axelgar/opentree/releases/download/v0.1.18/opentree_0.1.18_darwin_arm64.tar.gz"
-      sha256 "de4f3f2b64f57435570575aa85346e4f7b30aa5ad1468edf67e4aaf76ecf2cde"
+      sha256 "2d59efa0b7987bb31b672ce0ec78edac4047b2dcfe58c97057ed9bd8e792edd4"
 
       define_method(:install) do
         bin.install "opentree"
@@ -29,14 +29,14 @@ class Opentree < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/axelgar/opentree/releases/download/v0.1.18/opentree_0.1.18_linux_amd64.tar.gz"
-      sha256 "b6f291c6eb1ed8bdaa50a8e1c10813a0eedf543f3fd23697c443c51d5ee380e7"
+      sha256 "0d84bd405516473d0f93f751919bc39cb465bfefa05aae1535042bae62ccc96c"
       define_method(:install) do
         bin.install "opentree"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/axelgar/opentree/releases/download/v0.1.18/opentree_0.1.18_linux_arm64.tar.gz"
-      sha256 "22bfa6f7b91c9a0b7d80beafb23dec794e4907efbd5433f47aa27467e3919c16"
+      sha256 "6b0340adb9b9a9b57bf2906eec98b7bfd83970ece64539d0e348038371979618"
       define_method(:install) do
         bin.install "opentree"
       end
