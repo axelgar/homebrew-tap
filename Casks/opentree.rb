@@ -4,21 +4,21 @@ cask "opentree" do
 
   on_macos do
     on_arm do
-      sha256 "3b83199ec5faf46ab226f8e2b68de329350a160db547ed8552083107755a15ac"
+      sha256 "0fc635e90455172b7c114b39d773829b48de298169d95c79856c828d989d30eb"
       url "https://github.com/axelgar/opentree/releases/download/v#{version}/opentree_#{version}_darwin_arm64.tar.gz"
     end
     on_intel do
-      sha256 "07bc0df2c9515ba47564c5adf22dd0d02b147771e88a33ec6468cecbf906bf4a"
+      sha256 "0e1d947d6036e771e1bfe752e1c5e80b05d523808ee198ad9634c5ef0770ecad"
       url "https://github.com/axelgar/opentree/releases/download/v#{version}/opentree_#{version}_darwin_amd64.tar.gz"
     end
   end
   on_linux do
     on_arm do
-      sha256 "f6107e4675385dd0901c76f52ee1c2d2c3a8cad80f10d1abe785b5f8bda40eca"
+      sha256 "acb50825c22b02d088061fc80f4ba6475d96cc094162aa426f0990ab4616158b"
       url "https://github.com/axelgar/opentree/releases/download/v#{version}/opentree_#{version}_linux_arm64.tar.gz"
     end
     on_intel do
-      sha256 "73e4ac1c36b48318647a36fef6eef67662bc1f369242fe2f241839092a2f561e"
+      sha256 "a4ea6ec30e1f44fbaf1b804d28f16b6ff99bb1919c2c369694461063063c883a"
       url "https://github.com/axelgar/opentree/releases/download/v#{version}/opentree_#{version}_linux_amd64.tar.gz"
     end
   end
